@@ -9,7 +9,8 @@ public class AppleTest extends BaseTest{
 
     @Test
     public void checkHref(){
-                /** Assert.assertTrue(new MainPage(BASE_URL)
+        
+        /** Assert.assertTrue(new MainPage(BASE_URL)
                 .search(SEARCH_STRING)
                 .getHrefFromFirstArticle()
                 .contains("iphone-13"));
