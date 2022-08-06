@@ -18,11 +18,12 @@ public class MainPage {
     /**
      * Выполняется поиск на сайте среди статей и нажимается кнопка ENTER
      * @param searchString поисковая строка
+     * было при обращении к другим классам
+     * public void search(String searchString){
+     * textBoxInput.setValue(searchString);
+     * textBoxInput.sendKeys(Keys.ENTER);
      */
-    // было при обращении к другим классам
-    //public void search(String searchString){
-    //    textBoxInput.setValue(searchString);
-    //    textBoxInput.sendKeys(Keys.ENTER);
+    
     public SearchPage search(String searchString){
         textBoxInput.setValue(searchString);
         textBoxInput.sendKeys(Keys.ENTER);
