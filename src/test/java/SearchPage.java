@@ -11,8 +11,9 @@ public class SearchPage {
      */
     public String getHrefFromFirstArticle(){
         return articleTitles.first().getAttribute("href");
-        // 2 вариант
-        // String href = articleTitles.first().getAttribute("href");
-        // return href;
+        /** 2 вариант
+         * String href = articleTitles.first().getAttribute("href");
+         * return href;
+         */
     }
 }
