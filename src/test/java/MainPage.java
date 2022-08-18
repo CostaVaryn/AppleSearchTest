@@ -4,9 +4,7 @@ import org.openqa.selenium.Keys;
 
 import static com.codeborne.selenide.Selenide.$x;
 
-/**
- * Главная страничка сайта Appleinsider.ru
- */
+// Главная страничка сайта Appleinsider.ru
 
 public class MainPage {
     private final SelenideElement textBoxInput = $x("//input[@type='text']");
