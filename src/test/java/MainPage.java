@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$x;
 public class MainPage {
     private final SelenideElement textBoxInput = $x("//input[@type='text']");
 
-    public MainPage(String url){
+    public MainPage(String url) {
         Selenide.open(url);
     }
 
@@ -17,12 +17,13 @@ public class MainPage {
      * Выполняется поиск на сайте среди статей и нажимается кнопка ENTER
      * @param searchString поисковая строка
      * было при обращении к другим классам
-     * public void search(String searchString){
-     * textBoxInput.setValue(searchString);
-     * textBoxInput.sendKeys(Keys.ENTER);
+     * public void search(String searchString) {
+     *      textBoxInput.setValue(searchString);
+     *      textBoxInput.sendKeys(Keys.ENTER);
+     *  }
      */
     
-    public SearchPage search(String searchString){
+    public SearchPage search(String searchString) {
         textBoxInput.setValue(searchString);
         textBoxInput.sendKeys(Keys.ENTER);
         return new SearchPage();
