@@ -6,7 +6,7 @@ import org.junit.Before;
 
 abstract class BaseTest {
 
-    public void setUp(){
+    public void setUp() {
         WebDriverManager.chromedriver().setup();
         Configuration.browser = "chrome";
         Configuration.driverManagerEnabled = true;
@@ -15,12 +15,12 @@ abstract class BaseTest {
     }
 
     @Before
-    public void init(){
+    public void init() {
         setUp();
     }
 
     @After
-    public void tearDown(){
+    public void tearDown() {
         Selenide.closeWebDriver();
     }
 }
